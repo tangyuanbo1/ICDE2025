@@ -1,1 +1,2 @@
 # ICDE2025
+Hello everyone, this is the implementation repository for the paper "A Compositional Approach to Generative Modeling of Network Paths." The repository mainly contains two folders, each corresponding to the two experimental scenarios described in the paper.
