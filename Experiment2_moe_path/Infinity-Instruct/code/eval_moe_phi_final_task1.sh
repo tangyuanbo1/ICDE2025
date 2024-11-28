@@ -33,7 +33,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \
@@ -71,7 +71,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \
@@ -109,7 +109,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \
@@ -147,7 +147,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \
@@ -185,7 +185,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \
@@ -223,7 +223,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \
@@ -261,7 +261,7 @@ for moe_path in "${moe_paths[@]}"; do
     for data_path in "${data_paths[@]}"; do
         filename=$(basename $moe_path .pth)
         echo "Evaluating subject: $filename"
-        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python eval_moe_phi_final_task1.py \
             --model_path $model \
             --data_path $data_path \
             --moe_path $moe_path \

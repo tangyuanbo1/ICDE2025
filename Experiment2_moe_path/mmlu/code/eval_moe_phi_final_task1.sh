@@ -31,7 +31,7 @@ for moe_path in "${moe_paths[@]}"; do
     echo "Evaluating model with moe_path: $moe_path"
     for selected_subject in "${selected_subjects[@]}"; do
         echo "Evaluating subject: $selected_subject"
-        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi_task1.py \
             --selected_subjects "$selected_subject" \
             --save_dir $save_dir \
             --model $model \
@@ -71,7 +71,7 @@ for moe_path in "${moe_paths[@]}"; do
     echo "Evaluating model with moe_path: $moe_path"
     for selected_subject in "${selected_subjects[@]}"; do
         echo "Evaluating subject: $selected_subject"
-        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi_task1.py \
             --selected_subjects "$selected_subject" \
             --save_dir $save_dir \
             --model $model \
@@ -109,7 +109,7 @@ for moe_path in "${moe_paths[@]}"; do
     echo "Evaluating model with moe_path: $moe_path"
     for selected_subject in "${selected_subjects[@]}"; do
         echo "Evaluating subject: $selected_subject"
-        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi_task1.py \
             --selected_subjects "$selected_subject" \
             --save_dir $save_dir \
             --model $model \
@@ -147,7 +147,7 @@ for moe_path in "${moe_paths[@]}"; do
     echo "Evaluating model with moe_path: $moe_path"
     for selected_subject in "${selected_subjects[@]}"; do
         echo "Evaluating subject: $selected_subject"
-        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi_task1.py \
             --selected_subjects "$selected_subject" \
             --save_dir $save_dir \
             --model $model \
@@ -185,7 +185,7 @@ for moe_path in "${moe_paths[@]}"; do
     echo "Evaluating model with moe_path: $moe_path"
     for selected_subject in "${selected_subjects[@]}"; do
         echo "Evaluating subject: $selected_subject"
-        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi.py \
+        /home/naifanzhang/.conda/envs/eedi/bin/python evaluate_from_local_moe_phi_task1.py \
             --selected_subjects "$selected_subject" \
             --save_dir $save_dir \
             --model $model \

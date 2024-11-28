@@ -81,6 +81,55 @@ Example of usage:
 python recover_fix_D.py -n futian -p 0
 ```
 
+## Experiment2_moe_path
+This section describes the second experiment. 
+
+### Experimental Environment  
+Our method is implemented in Python and trained using an Nvidia A800 GPU. 
+
+### Experiment setup
+
+#### Dataset
+1. Download the dataset from [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro) and put it in the `Experiment2_moe_path/mmlu/code/TIGER-Lab/MMLU-Pro/data` (already included in the repository)
+2. Preprocess the Infinity-Instruct dataset by running the following command:
+```bash
+python Experiment2_moe_path/Infinity-Instruct/code/get_data.py
+```
+
+#### Moe Mask
+1. For MMLU-Pro, put the moe mask in: **Experiment2_moe_path/mmlu/phi_mask**
+2. For Infinity-Instruct, put the moe mask in: **Experiment2_moe_path/Infinity-Instruct/phi_mask**
+
+### Model
+Download the model from [Phi-3.5-MoE-instruct](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct) and put it in **Experiment2_moe_path/model**
+
+### Run
+1. For MMLU-Pro, run the following command:
+```bash
+bash Experiment2_moe_path/mmlu/code/eval_moe_phi_final_task1.sh
+bash Experiment2_moe_path/mmlu/code/eval_moe_phi_final_task2.sh
+```
+
+**The result is in the `Experiment2_moe_path/mmlu/code/results` folder.**
+
+2. For Infinity-Instruct, run the following command:
+```bash
+bash Experiment2_moe_path/Infinity-Instruct/code/eval_moe_phi_final_task1.sh
+bash Experiment2_moe_path/Infinity-Instruct/code/eval_moe_phi_final_task2.sh
+```
+
+**The result is in the `Experiment2_moe_path/Infinity-Instruct/code/results` folder.**
+
+### Result analysis
+1. Run the code `Experiment2_moe_path/analysis_result.ipynb` and `Experiment2_moe_path/analysis_result_mmlu.ipynb` to get the visual result.
+
+The result is shown as follows:
+
+![result](Experiment2_moe_path/comparison_plot_high_res.png)
+
+![Task2](Experiment2_moe_path/performance_degradation_matrix.png)
+
+
 # Reference
 Zhang, Desheng, Juanjuan Zhao, Fan Zhang, and Tian He. “UrbanCPS: A Cyber-Physical System Based on Multi-Source Big Infrastructure Data for Heterogeneous Model Integration.” In _Proceedings of the ACM/IEEE Sixth International Conference on Cyber-Physical Systems_, 238–47. ICCPS ’15. New York, NY, USA: Association for Computing Machinery, 2015. [https://doi.org/10.1145/2735960.2735985](https://doi.org/10.1145/2735960.2735985).
 
