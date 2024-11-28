@@ -91,7 +91,7 @@ Our method is implemented in Python and trained using an Nvidia A800 GPU.
 
 #### Dataset
 1. Download the dataset from [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro) and put it in the `Experiment2_moe_path/mmlu/code/TIGER-Lab/MMLU-Pro/data` (already included in the repository)
-2. Preprocess the Infinity-Instruct dataset by running the following command:
+2. Download the dataset from [Infinity-Instruct](https://huggingface.co/datasets/BAAI/Infinity-Instruct), and preprocess the Infinity-Instruct dataset by running the following command:
 ```bash
 python Experiment2_moe_path/Infinity-Instruct/code/get_data.py
 ```
@@ -121,7 +121,7 @@ bash Experiment2_moe_path/Infinity-Instruct/code/eval_moe_phi_final_task2.sh
 **The result is in the `Experiment2_moe_path/Infinity-Instruct/code/results` folder.**
 
 ### Result analysis
-1. Run the code `Experiment2_moe_path/analysis_result.ipynb` and `Experiment2_moe_path/analysis_result_mmlu.ipynb` to get the visual result.
+1. Run the code `Experiment2_moe_path/analysis_result.ipynb` to get the visual result.
 
 The result is shown as follows:
 
